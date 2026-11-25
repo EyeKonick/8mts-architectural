@@ -1,0 +1,50 @@
+---
+import { Image } from 'astro:assets';
+import Icon from './Icon.astro';
+import { images, interiorSheets } from '../data/site';
+---
+
+<section class="section interiors" id="interiors" aria-labelledby="interiors-title">
+	<div class="wrap interiors__wrap">
+		<div class="sec-head sec-head--split">
+			<div>
+				<p class="label mono"><span>I</span> Interiors</p>
+				<h2 class="h2" id="interiors-title">Interiors planned <em>to the last fixture.</em></h2>
+			</div>
+			<div class="sec-head__lead interiors__lead">
+				<p>
+					A condo, a lobby or a single room gets the same five sheets: where things go, what they are made of, how
+					they are lit and what the carpenter builds.
+				</p>
+				<a class="link-arrow" href="#quote" data-package="Condo and interior package">
+					Plan your interior <Icon name="arrow-right" />
+				</a>
+			</div>
+		</div>
+
+		<div class="interiors__body">
+			<ol class="isheets">
+				{
+					interiorSheets.map((s) => (
+						<li class="isheet">
+							<span class="isheet__code mono">{s.code}</span>
+							<p class="isheet__title">{s.title}</p>
+							<p class="isheet__line">{s.line}</p>
+						</li>
+					))
+				}
+			</ol>
+			<div class="frame frame--photo interiors__frame">
+				<Image
+					src={images.interiorLobby}
+					alt="Lobby with a veined marble reception desk, vertical timber wall slats, cube pendants and potted palms"
+					widths={[800, 1200, 1600]}
+					sizes="(max-width: 1023px) 100vw, 56vw"
+					data-source="stand-in"
+					data-subject="interior design of a lobby"
+					style="object-position: 55% 50%"
+				/>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,36 @@
+---
+import { services } from '../data/site';
+// word-highlight (kit moment, mounted by /assets/moments/moments.js): the statement rests at half
+// ink and turns to ink word by word as it crosses the middle of the screen; the strong words take
+// the accent. It runs back on the way up.
+// Below it, the nine services run past in the serif, moved by the scroll (src/scripts/fx.ts).
+const names = services.map((s) => s.title);
+---
+
+<section class="section statement ground-green" id="approach" aria-label="How the studio works" data-moment="word-highlight">
+	<div class="wrap">
+		<p class="label mono"><span>S</span> How we draw</p>
+		<p class="mo-wh__text statement__text">
+			Your plans, your requirements, our expertise. We measure what is there, draw every trade on one coordinated set
+			and check each sheet before it reaches the building official, so the house that gets built is <strong
+				>the house you approved.</strong
+			>
+		</p>
+	</div>
+	<div class="band" aria-label="Services" data-band>
+		<div class="band__track" data-band-track>
+			{
+				[0, 1].map((k) => (
+					<ul class="band__set" aria-hidden={k === 1 ? 'true' : undefined}>
+						{names.map((n) => (
+							<li>
+								<span>{n}</span>
+								<i aria-hidden="true" />
+							</li>
+						))}
+					</ul>
+				))
+			}
+		</div>
+	</div>
+</section>

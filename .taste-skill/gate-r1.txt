@@ -1,0 +1,54 @@
+gate: checking dist/index.html (service); this takes a few minutes on a CPU Chrome
+gate: 16 FAIL open
+  FAIL card-layout      section#work  [1440]
+       one layout (.frame--photo) in 7 sections: section#work, section#services, section#packages, section#interiors, section#visualization, section#clients, section#quote; a card layout at most twice
+       fix: a card layout at most twice on a page: build the other sections another way
+  FAIL copy-headings    h2#work-title "Houses, condos and offices. Drawn here, "  [1440]
+       "Houses, condos and offices. Drawn here, built on site." names no product, part, place or section (3 headings like it; at most one brand line per page) (and 2 more like it: "Materials and finishes", "FF&E schedule")
+       fix: name the thing in every heading: the product, a part, the place or a section noun
+  FAIL heading-scale    h3#pkg-permit "Complete plans and building permit packa"  [1440]
+       h3 headings in 3 sizes, 18px ("Space planning") to 28px (x1.56)
+       fix: size headings by level: the h1 largest, one size per level, each level below the one above
+  FAIL off-grid         div.wrap.voices__grid > div.voices__side > div.sec-head > p.label.mono "C CLIENTS"  [1440, 390]
+       left edge at 764px, 20px off a common edge of its section at 784px (6 elements)
+       fix: move it onto the page margin, or the column edge its section uses
+  FAIL photo-upscale    div.work-grid.work-grid--3 > a.work.work--s3:nth-of-type(1) > span.frame.frame--photo > im  [1440]
+       work-kitchen.D7fGT6Rt_4iOLt.webp: 302x403 shown at 302x603, blown up 1.50x
+       fix: use a source at least as wide as the picture is shown (twice that for sharp screens)
+  FAIL photo-upscale    div.work-grid.work-grid--3 > a.work.work--s6 > span.frame.frame--photo > img "img: Modern   [1440]
+       work-pool-house.CQ9G_fGG_28DDHo.webp: 604x453 shown at 628x627, blown up 1.38x
+       fix: use a source at least as wide as the picture is shown (twice that for sharp screens)
+  FAIL photo-upscale    div.work-grid.work-grid--3 > a.work.work--s3:nth-of-type(3) > span.frame.frame--photo > im  [1440]
+       work-office-fitout.CxnTZJFW_ZcxK3S.webp: 302x437 shown at 302x603, blown up 1.38x
+       fix: use a source at least as wide as the picture is shown (twice that for sharp screens)
+  FAIL container-edges  h2#voices-title "What owners say once the plans are filed"  [1440]
+       the h2 starts 652px right of the container's left: every h1 and h2 starts on it, 2px either way (SR-6)
+       fix: start the text on the container's left, or on the one split line every split shares
+  FAIL split-pair       section#packages > div.wrap > div.g2__row:nth-of-type(1) > div.sec-head.sec-head--split "P  [1440]
+       the two columns of the split start 93px apart at the top: a split's columns are top-aligned, 8px either way (SR-8)
+       fix: top-align both columns of the split (align-items: start)
+  FAIL split-pair       section#work > div.wrap > div.g2__row.work-row:nth-of-type(1) > div.sec-head.sec-head--spl  [1440]
+       the two columns of the split start 37px apart at the top: a split's columns are top-aligned, 8px either way (SR-8)
+       fix: top-align both columns of the split (align-items: start)
+  FAIL split-pair       section#interiors > div.wrap.interiors__wrap > div.sec-head.sec-head--split "I InteriorsIn  [1440]
+       the two columns of the split start 37px apart at the top: a split's columns are top-aligned, 8px either way (SR-8)
+       fix: top-align both columns of the split (align-items: start)
+  FAIL split-pair       section#work > div.wrap > div.g2__row.work-row:nth-of-type(1) > div.work-grid "Two-storey   [1440]
+       the split's left column starts with a picture or a box, not text: text left, the visual right, on every split (SR-8)
+       fix: put the text in the left column and the visual in the right, on every split
+  FAIL split-pair       section#clients > div.wrap.voices__grid "C ClientsWhat owners say once the plans "  [1440]
+       the split's left column starts with a picture or a box, not text: text left, the visual right, on every split (SR-8)
+       fix: put the text in the left column and the visual in the right, on every split
+  FAIL one-sided        #interiors section.section.interiors "I InteriorsInteriors planned to "  [1440]
+       its visuals end at x 816.7, short of the right line 1360
+       fix: let the row reach both .wrap edges
+  FAIL one-sided        #clients section.section.ground-surface "C ClientsWhat owners say once th"  [1440]
+       its visuals end at x 599.3, short of the right line 1360
+       fix: let the row reach both .wrap edges
+  FAIL screen-height    #work section.section.work-sec "F Finished workHouses, condos an"  [390]
+       2552px, 3.02 screens; a section is exactly one or two (--h), or on a phone at least one that its content fills
+       fix: make the section exactly one or two screens (--h: 1 or 2)
+  waiver ignored (matches no open finding): card-layout "section#services"
+  23 WARN (not blocking), first: scroll-reveal section#approach "S HOW WE DRAW Your pla; scroll-reveal section#process "W PROCESS Four steps fr; text-only section#questions "Questions about plans; section-gaps section#questions / section#process; section-gaps section#visualization / section#clients
+A FAIL you judge false: add {"check": "<id>", "target": "<its where, enough to name that one finding>", "reason": "<why, 12+ characters>"} to .taste-skill/waivers.json (one finding each, 5 at most, never for kit-edited or checker-gaming); it goes in your report. Never edit the kit's files or hide the page from the checker.
+GATE: FAIL 16 (round 1 of 3)

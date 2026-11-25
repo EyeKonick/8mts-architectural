@@ -1,0 +1,42 @@
+---
+import { Image } from 'astro:assets';
+import { images, testimonials } from '../data/site';
+
+---
+
+<section class="section ground-surface voices" id="clients" aria-labelledby="voices-title">
+	<div class="wrap voices__grid">
+		<div class="voices__side">
+			<div class="sec-head">
+				<p class="label mono"><span>C</span> Clients</p>
+				<h2 class="h2" id="voices-title">What owners say <em>once the plans are filed.</em></h2>
+			</div>
+			<ul class="voices__list">
+				{
+					testimonials.map((t) => (
+						<li class="voice">
+							<blockquote class="voice__quote">
+								<p>{t.quote}</p>
+							</blockquote>
+							<div class="voice__person">
+								<span class="voice__name">{t.name}</span>
+								<span class="voice__role">{t.role}</span>
+							</div>
+						</li>
+					))
+				}
+			</ul>
+		</div>
+		<div class="frame frame--photo voices__frame">
+			<Image
+				src={images.testimonialCondo}
+				alt="Condo living room with a pale grey sofa, round timber side tables, framed prints and tall plants by the window"
+				widths={[480, 720, 960]}
+				sizes="(max-width: 1023px) 100vw, 38vw"
+				data-source="stand-in"
+				data-subject="finished condo interior"
+				style="object-position: 40% 60%"
+			/>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,168 @@
+consistency  D:\AI Agency\Alipato Projects\8mts\dist\index.html
+--quick: not checked: scroll-linked (stepping), scroll-reveal (the reveal walk; IntersectionObserver reveals are read), hover-spill, hidden-visual, loop-pause, forms, reduced-motion, the dead-IntersectionObserver walk (hidden content is read with scripts off and under reduced motion), hover-move. Still told: IntersectionObserver reveals (scroll-reveal), held sections (pinned) and CSS scroll timelines (scroll-linked); faults inside held or [data-big-scene] sections are WARNs
+
+1440x900  17 screens  1 FAIL  17 WARN
+  FAIL card-layout     section#work
+       one layout (.frame--photo) in 7 sections: section#work, section#services, section#packages, section#interiors, section#visualization, section#clients, section#quote; a card layout at most twice  [1440-05-card-layout.jpg]
+       fix: a card layout at most twice on a page: build the other sections another way
+  WARN scroll-reveal   section#approach > div.wrap > p.mo-wh__text.statement__text  "Your plans, your requirements, our exper"
+       starts "color" (0.2 s) the moment it is scrolled into view (an IntersectionObserver) on span.mo-w:nth-of-type(1) (inside a dealt moment's section, [data-moment]: an enter moment is expected on every kind; its still is judged under reduced motion)  [1440-10-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  WARN scroll-reveal   section#process > div.wrap.process__wrap > div.process__body > div.frame.process__frame
+       starts an animation (1.6 s) the moment it is scrolled into view (an IntersectionObserver) on img (inside a dealt moment's section, [data-moment]: an enter moment is expected on every kind; its still is judged under reduced motion)  [1440-15-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  WARN text-only       section#questions  "Questions about plans and permits."
+       the section is only text: no picture, icon, mock or effect in it  [1440-13-text-only.jpg]
+       fix: give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground
+  WARN copy-headings   h2#work-title  "Finished houses, condos and offices acro"
+       "Finished houses, condos and offices across Metro Manila." names no product, part, place or section (the one brand line a page may have)  [1440-04-copy-headings.jpg]
+       fix: name the thing in every heading: the product, a part, the place or a section noun
+  WARN heading-scale   h3#pkg-permit  "Complete plans and building permit packa"
+       h3 headings in 2 sizes, 22px ("Condo and interior packa") to 28px (x1.27)  [1440-07-heading-scale.jpg]
+       fix: size headings by level: the h1 largest, one size per level, each level below the one above
+  WARN section-gaps    section#questions / section#process
+       287px between these sections, +29% against the median 223px of gaps at a change of ground  [1440-14-section-gaps.jpg]
+       fix: use one gap between sections (all within 25% of each other)
+  WARN section-gaps    section#visualization / section#clients
+       uneven space at the edge of a band: 74px outside its edge, 120px inside it (the space on either side of a change of ground reads as one gap only when the two match)  [1440-11-section-gaps.jpg]
+       fix: use one gap between sections (all within 25% of each other)
+  WARN section-gaps    section#clients / section#questions
+       uneven space at the edge of a band: 123px outside its edge, 72px inside it (the space on either side of a change of ground reads as one gap only when the two match)  [1440-12-section-gaps.jpg]
+       fix: use one gap between sections (all within 25% of each other)
+  WARN links           div.g2__row:nth-of-type(1) > article.pkg.pkg--wide > div.pkg__body > a.link-arrow  "Request this package"
+       3 "Request this package" links in 3 cards all go to #quote: none says which one was chosen  [1440-08-links.jpg]
+       fix: let each link carry its choice (#booking?room=fjara, a preset the form reads), or name the shared target ("Book a room")
+  WARN photo-set       div.g2__row.pkg-pair > article.pkg:nth-of-type(2) > a.pkg__media.frame > img  "asbuilt-plans.CQL95TNO_1omqK3.webp"
+       8 photographs in more than one look: lightness from 0.34 to 0.89; the odd one out is asbuilt-plans.CQL95TNO_1omqK3.webp  [1440-09-photo-set.jpg]
+       fix: grade the photographs to one look (light, colour, warmth), or replace the odd one out
+  WARN photo-credit    (the page text)
+       2 library sources (unsplash, wikimedia): the page credits unsplash, the page credits wikimedia; confirm each shows the client's own product, place or people
+       fix: confirm the library photograph shows the client's own product, place or people; otherwise replace it
+  WARN nav-labels      header.nav.nav-centre > a.skip-link  "Skip to content"
+       "Skip to content" opens a section headed "Architectural design studio in Makati"
+       fix: name each nav link after the heading of the section it opens
+  WARN nav-labels      header.nav.nav-centre > div.wrap.nav__bar > nav.nav__links > a.nav__link:nth-of-type(1)  "Work"
+       "Work" opens a section headed "Finished houses, condos and offices across Metro M"  [1440-01-nav-labels.jpg]
+       fix: name each nav link after the heading of the section it opens
+  WARN nav-labels      header.nav.nav-centre > div.wrap.nav__bar > nav.nav__links > a.nav__link:nth-of-type(5)  "Process"
+       "Process" opens a section headed "Four steps from first message to signed plans."  [1440-02-nav-labels.jpg]
+       fix: name each nav link after the heading of the section it opens
+  WARN link-styles     div.services__body > ol.svc-list > li:nth-of-type(9) > a.svc  "A-09 Kiosk designs Compact stalls for ma"
+       text links in 3 looks: no line, regular (5, like "See the packages"); underline, regular (7, like "Start your project"); border 1px, regular (1, like "A-09 Kiosk designs C")  [1440-06-link-styles.jpg]
+       fix: give text links one look wherever they sit: one underline, one weight
+  WARN split-align     section#top > div.wrap.hero__wrap > div.hero-text.hero__grid  "Building permit plans from ₱30,000 Archi"
+       the splits sit two ways: 1 to the top of the taller side ("Building permit plans "); 1 to the middle of the taller side ("I-01 Space planning Ev")  [1440-03-split-align.jpg]
+       fix: set every split one way: the text to the top of its visual, or every one centred on it
+  WARN action-repeat   header.nav.nav-centre > div.wrap.nav__bar > div.nav__actions > a.btn.btn--primary  "request a quote"
+       "request a quote" shows 2 times on the first screen at 1440px (nav, hero): the nav's button and the hero's; nothing else on the screen may repeat it  [1440-16-action-repeat.jpg]
+       fix: show the action once a screen besides the nav's button: the hero's, the close's or the phone bar's, never all at once
+
+390x844  22 screens  4 FAIL  13 WARN
+  FAIL photo-upscale   div.work-grid > a.work.work--s3:nth-of-type(2) > span.frame.frame--photo > img  "img: Living room with a curved cream sof"
+       work-living-room.QRWjWwM0_1fCacR.webp: 194x275 shown at 358x224, blown up 1.85x  [390-05-photo-upscale.jpg]
+       fix: use a source at least as wide as the picture is shown (twice that for sharp screens)
+  FAIL photo-upscale   div.work-grid > a.work.work--s3:nth-of-type(3) > span.frame.frame--photo > img  "img: Kitchen with charcoal shaker cabine"
+       work-kitchen.D7fGT6Rt_4iOLt.webp: 194x259 shown at 358x224, blown up 1.85x  [390-06-photo-upscale.jpg]
+       fix: use a source at least as wide as the picture is shown (twice that for sharp screens)
+  FAIL photo-upscale   div.work-grid > a.work.work--s3:nth-of-type(1) > span.frame.frame--photo > img  "img: Office with oak-framed glass partit"
+       work-office-fitout.CxnTZJFW_ZcxK3S.webp: 194x281 shown at 358x224, blown up 1.85x  [390-07-photo-upscale.jpg]
+       fix: use a source at least as wide as the picture is shown (twice that for sharp screens)
+  FAIL photo-upscale   div.work-grid > a.work.work--s3:nth-of-type(2) > span.frame.frame--photo > img  "img: Open-plan loft office with full-hei"
+       work-loft-office.CXoO0-j1_Z2tRIq9.webp: 195x130 shown at 358x224, blown up 1.84x  [390-08-photo-upscale.jpg]
+       fix: use a source at least as wide as the picture is shown (twice that for sharp screens)
+  WARN scroll-reveal   section#approach > div.wrap > p.mo-wh__text.statement__text  "Your plans, your requirements, our exper"
+       starts "color" (0.2 s) the moment it is scrolled into view (an IntersectionObserver) on span.mo-w:nth-of-type(1) (inside a dealt moment's section, [data-moment]: an enter moment is expected on every kind; its still is judged under reduced motion)  [390-11-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  WARN scroll-reveal   section#process > div.wrap.process__wrap > div.process__body > div.frame.process__frame
+       starts an animation (1.6 s) the moment it is scrolled into view (an IntersectionObserver) on img (inside a dealt moment's section, [data-moment]: an enter moment is expected on every kind; its still is judged under reduced motion)  [390-16-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  WARN no-visual       section#interiors  "Interiors planned to the last fixture."
+       pictures, effects and mocks cover 20% of this section; a feature section needs a visual (about 25% or more)  [390-10-no-visual.jpg]
+       fix: give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits
+  WARN text-only       section#questions  "Questions about plans and permits."
+       the section is only text: no picture, icon, mock or effect in it  [390-13-text-only.jpg]
+       fix: give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground
+  WARN button-styles   header.nav.nav-centre > div.wrap.nav__bar > button.nav__toggle
+       the menu button is filled in #e1e0d9, a fill none of the page's buttons use (#1e2a16, #ecebe6): one more button look  [390-01-button-styles.jpg]
+       fix: draw the menu button as the secondary button (an outline in the ink) or as a bare icon
+  WARN section-gaps    section#packages / section#interiors
+       223px between these sections, +34% against the median 166px of gaps at a change of ground  [390-09-section-gaps.jpg]
+       fix: use one gap between sections (all within 25% of each other)
+  WARN section-gaps    section#process / section#quote
+       219px between these sections, +45% against the median 151px  [390-17-section-gaps.jpg]
+       fix: use one gap between sections (all within 25% of each other)
+  WARN section-gaps    section#visualization / section#clients
+       uneven space at the edge of a band: 50px outside its edge, 103px inside it (the space on either side of a change of ground reads as one gap only when the two match)  [390-12-section-gaps.jpg]
+       fix: use one gap between sections (all within 25% of each other)
+  WARN section-gaps    section#clients / section#questions
+       uneven space at the edge of a band: 99px outside its edge, 48px inside it (the space on either side of a change of ground reads as one gap only when the two match)  [390-14-section-gaps.jpg]
+       fix: use one gap between sections (all within 25% of each other)
+  WARN section-gaps    section#questions / section#process
+       uneven space at the edge of a band: 63px outside its edge, 103px inside it (the space on either side of a change of ground reads as one gap only when the two match)  [390-15-section-gaps.jpg]
+       fix: use one gap between sections (all within 25% of each other)
+  WARN proximity       div.g2__row.work-row:nth-of-type(1) > div.work-grid > a.work.work--s6 > span.frame.frame--photo  "Two-storey residence RESIDENTIAL · ALABA"
+       stacked at this width, the visual starts 12px under the text and buttons above it ("Two-storey residence RESIDENTI"): it reads glued to them (and 2 more like it: "Corner condo unit INTERI", "Kitchen renovation RENOV")  [390-03-proximity.jpg]
+       fix: give the stacked split the section's own gap between text and visual (40px or more on a phone)
+  WARN photo-set       div.work-grid > a.work.work--s6 > span.frame.frame--photo > img  "work-residence-dusk.BHsfSFbO_2rPSP5.webp"
+       14 photographs in more than one look: lightness from 0.26 to 0.91; the odd one out is work-residence-dusk.BHsfSFbO_2rPSP5.webp  [390-04-photo-set.jpg]
+       fix: grade the photographs to one look (light, colour, warmth), or replace the odd one out
+  WARN link-styles     div.hero-text.hero__grid > div.hero__text > div.hero__actions > a.btn.btn--secondary  "See the packages"
+       text links in 3 looks: no line, regular (5, like "See the packages"); underline, regular (7, like "Start your project"); border 1px, regular (9, like "A-01 Architectural d")  [390-02-link-styles.jpg]
+       fix: give text links one look wherever they sit: one underline, one weight
+
+first screen at 1280, 1152, 1024, 896, 768  0 FAIL  0 WARN
+
+the page at 320x640, walked for what runs past the screen's edge  0 FAIL
+
+checks
+  PASS assets                 PASS shader-lint            PASS gl-fallback            
+  PASS empty-visual           PASS hero-fill              PASS flush                  
+  PASS placeholder            PASS sample-label           PASS caption                
+  PASS credit-wall            PASS nav                    PASS nav-covers             
+  PASS spill                  PASS off-viewport           PASS fold-card              
+  SKIP hover-spill            PASS overlap-text           PASS collide                
+  PASS tap-size               PASS row-gap                PASS cut-text               
+  PASS fold-cut               PASS marquee                SKIP scroll-linked          
+  WARN scroll-reveal          PASS pinned                 SKIP loop-pause             
+  SKIP reduced-motion         PASS hidden-content         PASS webgl                  
+  WARN no-visual              WARN text-only              PASS card-visual            
+  SKIP hidden-visual          PASS card-family            FAIL card-layout            
+  PASS nesting                PASS effect-repeat          PASS ui-fit                 
+  PASS ui-centre              PASS dark-ground            WARN button-styles          
+  PASS button-shape           PASS same-action            PASS button-picture         
+  PASS cta                    PASS pricing-tiers          PASS copy-headline          
+  PASS copy-fact              WARN copy-headings          PASS copy-buttons           
+  PASS copy-actions           WARN heading-scale          PASS stagger                
+  PASS top-stagger            PASS off-grid               PASS col-edge               
+  PASS right-edge             PASS centre-axis            PASS tilt                   
+  PASS contrast               PASS text-contrast          PASS body-size              
+  PASS busy-ground            WARN section-gaps           WARN proximity              
+  PASS hole                   WARN links                  SKIP forms                  
+  FAIL photo-upscale          WARN photo-set              WARN photo-credit           
+  PASS nav-family             WARN nav-labels             WARN link-styles            
+  PASS heading-align          PASS label-centre           PASS fake-button            
+  PASS stranded-action        PASS orphan                 PASS unit-break             
+  PASS tab-wrap               PASS effects-fit            PASS fade-cut               
+  PASS photo-weight           PASS copy-length            PASS nav-current            
+  PASS progress-bar           PASS photo-repeat           PASS button-contrast        
+  PASS photo-print            PASS grounds                WARN split-align            
+  PASS fact-agree             PASS fold-action            PASS action-count           
+  PASS one-screen             SKIP hover                  SKIP hover-move             
+  PASS product-shown          PASS same-object            PASS font-load              
+  PASS visual-caption         PASS visual-empty           PASS effect-kind            
+  PASS hero-enter             PASS moment-none            PASS street-number          
+  PASS postcode               PASS coordinates            PASS company-number         
+  PASS phone-number           PASS hero-screen            PASS section-height         
+  PASS section-air            PASS one-section            PASS one-heading            
+  PASS container-edges        PASS row-lines              PASS split-pair             
+  PASS motion-layer           PASS count-text             PASS loop-cycle             
+  PASS section-tile           PASS empty-area             PASS a11y-name              
+  PASS img-alt                PASS field-label            PASS heading-order          
+  PASS tabindex               PASS focus-ring             PASS focus-visible          
+  PASS focus-hidden           PASS skip-link              PASS menu-toggle            
+  PASS lang                   PASS page-meta              PASS share-meta             
+  WARN action-repeat          PASS map-link               PASS open-now               
+  PASS assumed                PASS run-on                 PASS form-fields            
+  PASS form-send              
+
+total  5 FAIL  30 WARN  (crops and report.json in D:\AI Agency\Alipato Projects\8mts\dist\.taste-skill\consistency)

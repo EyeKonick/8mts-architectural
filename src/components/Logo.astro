@@ -1,0 +1,10 @@
+---
+/* The studio's own wordmark, drawn from its logo file as a mask so it takes the text colour. */
+interface Props {
+	full?: boolean;
+	class?: string;
+}
+const { full = false, class: className } = Astro.props;
+---
+
+<span class:list={['logo', full ? 'logo--full' : 'logo--mark', className]} aria-hidden="true"></span>

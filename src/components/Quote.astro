@@ -1,0 +1,90 @@
+---
+import { Image } from 'astro:assets';
+import Icon from './Icon.astro';
+import { company, images, projectTypes } from '../data/site';
+
+// Optional form backend (Formspree, Web3Forms, your own API). Without it, the form
+// checks every field, then opens the visitor's email app with the request filled in.
+const endpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT ?? '';
+---
+
+<section class="section ground-surface quote" id="quote" style="--hm: 2" aria-labelledby="quote-title">
+	<div class="wrap quote__grid">
+		<div class="quote__intro">
+			<p class="label mono"><span>R</span> Quote</p>
+			<h2 class="h2" id="quote-title">Request a quote <em>for your plans.</em></h2>
+			<p class="quote__lead">
+				Tell us what you want to build or document and where. We reply with the scope and a quotation for your project.
+			</p>
+			<dl class="quote__details">
+				<div>
+					<dt class="mono">Email</dt>
+					<dd><a class="u-link" href={`mailto:${company.email}`}>{company.email}</a></dd>
+				</div>
+				<div>
+					<dt class="mono">Facebook and Messenger</dt>
+					<dd>8MTS Architectural Design Studio</dd>
+				</div>
+				<div>
+					<dt class="mono">Studio</dt>
+					<dd>
+						<a class="u-link" href="https://www.google.com/maps/search/?api=1&query=Harvard+Street+Makati" target="_blank" rel="noopener noreferrer">
+							{company.area}
+						</a>
+					</dd>
+				</div>
+			</dl>
+		</div>
+
+		<div class="quote__side">
+				<div class="frame frame--photo quote__frame">
+					<Image
+						src={images.makatiAvenue}
+						alt="Wide avenue in Makati lined with palm trees and office towers"
+						widths={[640, 960, 1280]}
+						sizes="(max-width: 639px) 150vw, (max-width: 1023px) 100vw, 50vw"
+						data-source="stand-in"
+						data-subject="Makati, the studio's district"
+					/>
+				</div>
+		<form class="form" novalidate data-contact-form data-endpoint={endpoint} data-email={company.email}>
+			<div class="field field--half">
+				<label for="qf-name">Your name</label>
+				<input id="qf-name" name="name" type="text" autocomplete="name" required aria-describedby="qf-name-error" />
+				<span class="field__error" id="qf-name-error"></span>
+			</div>
+			<div class="field field--half">
+				<label for="qf-email">Email address</label>
+				<input id="qf-email" name="email" type="email" autocomplete="email" required aria-describedby="qf-email-error" />
+				<span class="field__error" id="qf-email-error"></span>
+			</div>
+			<div class="field field--half">
+				<label for="qf-type">Package or service</label>
+				<select id="qf-type" name="projectType" required aria-describedby="qf-type-error" data-package-select>
+					<option value="">Choose one</option>
+					{projectTypes.map((t) => <option value={t}>{t}</option>)}
+				</select>
+				<span class="field__error" id="qf-type-error"></span>
+			</div>
+			<div class="field field--half">
+				<label for="qf-location">Project location</label>
+				<input id="qf-location" name="location" type="text" autocomplete="address-level2" aria-describedby="qf-location-hint" />
+				<span class="field__hint" id="qf-location-hint">City or district</span>
+			</div>
+			<div class="field">
+				<label for="qf-message">About the project</label>
+				<textarea id="qf-message" name="message" rows="3" required aria-describedby="qf-message-error"></textarea>
+				<span class="field__error" id="qf-message-error"></span>
+			</div>
+			<input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
+			<div class="form__foot">
+				<button class="btn btn--primary" type="submit" data-submit>
+					<span class="btn__label">Send the request</span>
+					<span class="btn__icon"><Icon name="arrow-right" /></span>
+				</button>
+				<p class="form__status" role="status" aria-live="polite" data-form-status></p>
+			</div>
+		</form>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,21 @@
+{
+ "palettes": [],
+ "types": [],
+ "dealt": [
+  "figtree",
+  "newsreader",
+  "host"
+ ],
+ "moments": [
+  {
+   "id": "word-highlight",
+   "at": "2026-11-25T08:45:27.496Z",
+   "seed": "ffdd3187"
+  },
+  {
+   "id": "picture-develops",
+   "at": "2026-11-25T08:45:27.496Z",
+   "seed": "ffdd3187"
+  }
+ ]
+}

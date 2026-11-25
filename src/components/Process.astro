@@ -1,0 +1,37 @@
+---
+import { Image } from 'astro:assets';
+import { images, steps } from '../data/site';
+---
+
+<section class="section ground-deep process" id="process" style="--hm: 2" aria-labelledby="process-title">
+	<div class="wrap process__wrap">
+		<div class="sec-head">
+			<p class="label mono"><span>W</span> Process</p>
+			<h2 class="h2" id="process-title">Four steps from first message <em>to signed plans.</em></h2>
+		</div>
+		<div class="process__body">
+			<ol class="steps">
+				{
+					steps.map((s, i) => (
+						<li class="step">
+							<span class="step__n mono">Step {String(i + 1).padStart(2, '0')}</span>
+							<h3 class="step__title">{s.title}</h3>
+							<p class="step__text">{s.text}</p>
+						</li>
+					))
+				}
+			</ol>
+			<!-- picture-develops (kit moment, film look): the drawing comes up out of the paper once as it enters -->
+			<div class="frame process__frame" data-moment="picture-develops">
+				<Image
+					src={images.floorPlan}
+					alt="Floor plan of a V-shaped building with a semicircular lecture hall, drawn in black ink"
+					widths={[640, 960, 1280]}
+					sizes="(max-width: 1023px) 100vw, 50vw"
+					data-source="stand-in"
+					data-subject="architectural floor plan drawing"
+				/>
+			</div>
+		</div>
+	</div>
+</section>

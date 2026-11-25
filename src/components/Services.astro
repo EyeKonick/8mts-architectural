@@ -1,0 +1,46 @@
+---
+import { Image } from 'astro:assets';
+import Icon from './Icon.astro';
+import { images, services } from '../data/site';
+---
+
+<section class="section services" id="services" aria-labelledby="services-title" data-services>
+	<div class="wrap">
+		<div class="sec-head">
+			<p class="label mono"><span>A</span> Services</p>
+			<h2 class="h2" id="services-title">Nine design and drafting services. <em>One studio draws them all.</em></h2>
+		</div>
+
+		<div class="services__body">
+			<ol class="svc-list">
+				{
+					services.map((s) => (
+						<li>
+							<a class="svc" href="#quote" data-service={s.title}>
+								<span class="svc__code mono">{s.code}</span>
+								<span class="svc__title">{s.title}</span>
+								<span class="svc__line">{s.line}</span>
+								<span class="svc__go" aria-hidden="true">
+									<Icon name="arrow-up-right" />
+								</span>
+							</a>
+						</li>
+					))
+				}
+			</ol>
+
+			<div class="services__visual">
+				<div class="frame frame--photo crop services__frame">
+					<Image
+						src={images.massingModel}
+						alt="Scale model of a two-storey courtyard house in tan card, lit from above"
+						widths={[800, 1200, 1600]}
+						sizes="(max-width: 1023px) 100vw, 60vw"
+						data-source="stand-in"
+						data-subject="architectural scale model"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

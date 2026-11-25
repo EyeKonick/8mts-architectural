@@ -1,0 +1,38 @@
+{
+ "start": "2026-11-25T16:24:15.066Z",
+ "round": 0,
+ "idle": 0,
+ "errors": 0,
+ "status": "done",
+ "history": [
+  {
+   "at": "2026-11-25T16:24:15.185Z",
+   "mode": "done",
+   "status": "done",
+   "reason": "keep the scroll effects, close the gate",
+   "round": 0
+  },
+  {
+   "at": "2026-11-25T16:24:20.939Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": "dist/index.html",
+  "url": null,
+  "root": "dist",
+  "kind": "service",
+  "category": "architectural design and planning",
+  "primary": "Request a quote",
+  "rounds": 3,
+  "start": "2026-11-25T16:24:15.066Z",
+  "by": "gate.mjs --start"
+ },
+ "doneReason": "keep the scroll effects, close the gate",
+ "at": "2026-11-25T16:24:15.186Z"
+}

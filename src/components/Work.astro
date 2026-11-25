@@ -1,0 +1,84 @@
+---
+import { Image } from 'astro:assets';
+import Icon from './Icon.astro';
+import { works } from '../data/site';
+
+// Two rows of three: wide, tall, tall, then tall, tall, wide.
+const byId = Object.fromEntries(works.map((w) => [w.id, w]));
+const rows = [
+	[
+		{ w: byId['alabang'], span: 's6' },
+		{ w: byId['rockwell-unit'], span: 's3' },
+		{ w: byId['qc-kitchen'], span: 's3' },
+	],
+	[
+		{ w: byId['bgc-office'], span: 's3' },
+		{ w: byId['makati-loft'], span: 's3' },
+		{ w: byId['tagaytay'], span: 's6' },
+	],
+];
+const img = {
+	s6: { widths: [800, 1200, 1600], sizes: '(max-width: 1023px) 100vw, 60vw' },
+	s3: { widths: [480, 800, 1200], sizes: '(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 40vw' },
+	// a landscape photograph cropped into a tall slot needs a wider file
+	s3wide: { widths: [600, 900, 1200], sizes: '(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 64vw' },
+} as const;
+---
+
+<section class="section work-sec g2" id="work" aria-labelledby="work-title" style="--h: 2; --hm: 2">
+	<div class="wrap">
+		{
+			rows.map((row, r) => (
+				<div class={`g2__row work-row work-row--${r + 1}`}>
+					{r === 0 && (
+						<div class="sec-head sec-head--split">
+							<div>
+								<p class="label mono">
+									<span>F</span> Finished work
+								</p>
+								<h2 class="h2" id="work-title">
+									Finished houses, condos and offices <em>across Metro Manila.</em>
+								</h2>
+							</div>
+							<div class="sec-head__lead work__lead">
+								<p>
+									Each project started as a brief and a lot or a unit. Every one left the studio as a full set of plans
+									the contractor built from.
+								</p>
+								<a class="link-arrow" href="#quote">
+									Start your project <Icon name="arrow-right" />
+								</a>
+							</div>
+						</div>
+					)}
+					<div class="work-grid">
+						{row.map(({ w, span }) => (
+							<a class={`work work--${span}`} href="#quote" data-package={w.package}>
+								<span class="work__head">
+									<span class="work__name">
+										<span class="work__title">{w.title}</span>
+										<span class="work__scope">{w.scope}</span>
+									</span>
+									<span class="work__meta mono">
+										{w.kind} · {w.place} · {w.year}
+									</span>
+								</span>
+								<span class="frame frame--photo work__frame">
+									<Image
+										src={w.image}
+										alt={w.alt}
+										widths={[...img[span === 's3' && w.image.width > w.image.height ? 's3wide' : (span as 's6' | 's3')].widths]}
+										sizes={img[span === 's3' && w.image.width > w.image.height ? 's3wide' : (span as 's6' | 's3')].sizes}
+										data-source="stand-in"
+										data-subject={`${w.kind.toLowerCase()} project`}
+										style={w.focus ? `object-position: ${w.focus}` : undefined}
+									/>
+								</span>
+							</a>
+						))}
+					</div>
+				</div>
+			))
+		}
+	</div>
+</section>

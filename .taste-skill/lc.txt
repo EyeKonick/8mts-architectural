@@ -1,0 +1,58 @@
+
+390x844  lines x 16 and 374, nav 64px, one screen 844px
+  hero 844 tall; h1 40px/1.02, 2 lines, 358x86 at 16,158; lead 17/25.5, 3 lines, 358 wide; buttons 2 x 48; visual -
+  section #top section.hero.ground-deep "Building permit plans from ₱3 y     0  h   844  content 708
+  section #work section.section.work-sec "F Finished workFinished hous y   844  h  1688  content 1439
+  section #services section.section.services "A ServicesNine design an y  2532  h  1144  content 975
+  section #packages section.section.packages "P PackagesPackages and p y  3676  h  1589  content 1427
+  section #interiors section.section.interiors "I InteriorsInteriors p y  5265  h  1232  content 1063
+  section #approach section.section.statement "S How we drawYour plans y  6497  h   844  content 548
+  section #visualization section.section.visualization "V 3D views3D v y  7341  h   925  content 776
+  section #clients section.section.ground-surface "C ClientsWhat owner y  8266  h  1169  content 1000
+  section #questions section.section.faq "Q QuestionsQuestions about p y  9435  h  1130  content 1084
+  section #process section.section.ground-deep "W ProcessFour steps fr y 10565  h  1688  content 1451
+  section #quote section.section.ground-surface "R QuoteRequest a quot y 12253  h  1688  content 1507
+  edge-right       #work span.frame.frame--photo: ends at x 187; the right line is 374
+  edge-left        #work span.frame.frame--photo: starts at x 203; the lines are 16 and the column starts
+  edge-right       #work span.frame.frame--photo: ends at x 187; the right line is 374
+  edge-left        #work span.frame.frame--photo: starts at x 203; the lines are 16 and the column starts
+  bleed-one-side   #approach ul.band__set "Architectural design and plannin": runs from x 3372.8 out to the right viewport edge; the left side stays at 16
+  neighbour        #process section.section.ground-deep "W ProcessFour steps from first m: framed, 6px of #questions section.section.faq "Q QuestionsQuestions about plans" shows
+
+1440x900  lines x 80 and 1360, nav 72px, one screen 900px
+  hero 900 tall; h1 72px/1.02, 3 lines, 515x228 at 80,166; lead 20/30, 3 lines, 519 wide; buttons 2 x 48; visual -
+  section #top section.hero.ground-deep "Building permit plans from ₱3 y     0  h   900  content 716
+  section #work section.section.work-sec "F Finished workFinished hous y   900  h  1800  content 114
+  section #services section.section.services "A ServicesNine design an y  2700  h   900  content 661
+  section #packages section.section.packages "P PackagesPackages and p y  3600  h   900  content 114
+  section #interiors section.section.interiors "I InteriorsInteriors p y  4500  h   900  content 661
+  section #approach section.section.statement "S How we drawYour plans y  5400  h   900  content 585
+  section #visualization section.section.visualization "V 3D views3D v y  6300  h   900  content 578
+  section #clients section.section.ground-surface "C ClientsWhat owner y  7200  h   900  content 708
+  section #questions section.section.faq "Q QuestionsQuestions about p y  8100  h   900  content 235
+  section #process section.section.ground-deep "W ProcessFour steps fr y  9000  h   900  content 661
+  section #quote section.section.ground-surface "R QuoteRequest a quot y  9900  h   900  content 180
+  bleed-one-side   #approach ul.band__set "Architectural design and plannin": runs from x 5481.2 out to the right viewport edge; the left side stays at 80
+  sparse           #work section.section.work-sec "F Finished workFinished houses, ": its content fills 6% of its screen; merge it or give it its visual (0.55 is the aim)
+  sparse           #packages section.section.packages "P PackagesPackages and prices. T": its content fills 13% of its screen; merge it or give it its visual (0.55 is the aim)
+  sparse           #questions section.section.faq "Q QuestionsQuestions about plans": its content fills 26% of its screen; merge it or give it its visual (0.55 is the aim)
+  sparse           #quote section.section.ground-surface "R QuoteRequest a quote for your: its content fills 20% of its screen; merge it or give it its visual (0.55 is the aim)
+
+1280x900  lines x 80 and 1200, nav 72px, one screen 900px
+  hero 900 tall; h1 67.68px/1.02, 3 lines, 453x214 at 80,166; lead 20/30, 3 lines, 453 wide; buttons 2 x 48; visual -
+  section #top section.hero.ground-deep "Building permit plans from ₱3 y     0  h   900  content 716
+  section #work section.section.work-sec "F Finished workFinished hous y   900  h  1800  content 163
+  section #services section.section.services "A ServicesNine design an y  2700  h   900  content 661
+  section #packages section.section.packages "P PackagesPackages and p y  3600  h   900  content 113
+  section #interiors section.section.interiors "I InteriorsInteriors p y  4500  h   900  content 661
+  section #approach section.section.statement "S How we drawYour plans y  5400  h   900  content 583
+  section #visualization section.section.visualization "V 3D views3D v y  6300  h   900  content 578
+  section #clients section.section.ground-surface "C ClientsWhat owner y  7200  h   900  content 708
+  section #questions section.section.faq "Q QuestionsQuestions about p y  8100  h   900  content 233
+  section #process section.section.ground-deep "W ProcessFour steps fr y  9000  h   900  content 661
+  section #quote section.section.ground-surface "R QuoteRequest a quot y  9900  h   900  content 180
+  bleed-one-side   #approach ul.band__set "Architectural design and plannin": runs from x 5122.3 out to the right viewport edge; the left side stays at 80
+  sparse           #work section.section.work-sec "F Finished workFinished houses, ": its content fills 9% of its screen; merge it or give it its visual (0.55 is the aim)
+  sparse           #packages section.section.packages "P PackagesPackages and prices. T": its content fills 13% of its screen; merge it or give it its visual (0.55 is the aim)
+  sparse           #questions section.section.faq "Q QuestionsQuestions about plans": its content fills 26% of its screen; merge it or give it its visual (0.55 is the aim)
+  sparse           #quote section.section.ground-surface "R QuoteRequest a quote for your: its content fills 20% of its screen; merge it or give it its visual (0.55 is the aim)

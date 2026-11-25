@@ -1,0 +1,69 @@
+---
+import { Image } from 'astro:assets';
+import Icon from './Icon.astro';
+import { packages } from '../data/site';
+
+// Three plans side by side on one screen. The building permit package, the studio's full set,
+// is the featured one on the green ground.
+const order = ['interior', 'permit', 'asbuilt'];
+const plans = order.map((id) => packages.find((p) => p.id === id)!);
+---
+
+<section class="section packages" id="packages" aria-labelledby="packages-title">
+	<div class="wrap plans-wrap">
+		<div class="sec-head sec-head--split">
+			<div>
+				<p class="label mono"><span>P</span> Packages</p>
+				<h2 class="h2" id="packages-title">Packages and prices. <em>Three ways to start.</em></h2>
+			</div>
+			<p class="sec-head__lead">
+				Each price is a starting price. The final quote follows your scope, your requirements and the conditions on
+				site.
+			</p>
+		</div>
+
+		<div class="plans">
+			{
+				plans.map((p) => (
+					<article class:list={['plan', { 'plan--featured': p.id === 'permit' }]} aria-labelledby={`plan-${p.id}`}>
+						<a class="plan__media frame frame--photo" href="#quote" data-package={p.short} tabindex="-1" aria-hidden="true">
+							<Image
+								src={p.image}
+								alt=""
+								widths={[480, 720, 960]}
+								sizes="(max-width: 1023px) 100vw, 34vw"
+								data-source={p.id === 'permit' ? 'stand-in' : 'client'}
+								data-subject={p.short}
+								style={p.id === 'asbuilt' ? 'object-position: 50% 62%' : 'object-position: 50% 55%'}
+							/>
+						</a>
+						<div class="plan__body">
+							<p class="plan__sheet mono">
+								{p.sheet} · {p.for}
+							</p>
+							<h3 class="plan__title" id={`plan-${p.id}`}>
+								{p.short}
+							</h3>
+							<p class="plan__price">
+								<span class="plan__from">from</span> ₱{p.price}
+							</p>
+							<ul class="plan__list">
+								{p.includes.map((t) => (
+									<li>{t}</li>
+								))}
+							</ul>
+							{p.addons.length > 0 && (
+								<p class="plan__addons">
+									<span class="mono">Add-ons</span> {p.addons.join(' · ')}
+								</p>
+							)}
+							<a class="link-arrow plan__cta" href="#quote" data-package={p.short}>
+								Request this package <Icon name="arrow-right" />
+							</a>
+						</div>
+					</article>
+				))
+			}
+		</div>
+	</div>
+</section>

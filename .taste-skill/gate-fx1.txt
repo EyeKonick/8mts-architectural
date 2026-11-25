@@ -1,0 +1,357 @@
+gate: checking dist/index.html (service); this takes a few minutes on a CPU Chrome
+gate: 117 FAIL open
+  FAIL scroll-reveal    section#work "F FINISHED WORK Finished houses, condos "  [1440, 390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver) on p.label.mono
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#services > div.wrap > div.sec-head > p.label.mono "A SERVICES"  [1440, 390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    h2#services-title "Nine design and drafting services. One s"  [1440, 390]
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on span
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap > div.services__body > ol.svc-list > li:nth-of-type(1) "A-01 Architectural design  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap > div.services__body > ol.svc-list > li:nth-of-type(2) "A-02 CAD drafting and con  [1440, 390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap > div.services__body > ol.svc-list > li:nth-of-type(3) "A-03 3D architectural vis  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap > div.services__body > ol.svc-list > li:nth-of-type(4) "A-04 Architectural docume  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap > div.services__body > ol.svc-list > li:nth-of-type(5) "A-05 Design consultation   [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap > div.services__body > ol.svc-list > li:nth-of-type(6) "A-06 Renovation and inter  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap > div.services__body > ol.svc-list > li:nth-of-type(7) "A-07 As-built drawings Pl  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap > div.services__body > ol.svc-list > li:nth-of-type(8) "A-08 Commercial and inter  [1440, 390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap > div.services__body > ol.svc-list > li:nth-of-type(9) "A-09 Kiosk designs Compac  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap > div.services__body > div.services__visual > div.frame.frame--photo  [1440, 390]
+       starts "scale" (1.4 s) the moment it is scrolled into view (an IntersectionObserver) on img
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#packages "P PACKAGES Packages and prices. Three wa"  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver) on p.label.mono
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.interiors__wrap > div.sec-head.sec-head--split > div:nth-of-type(1) > p.label.mon  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    h2#interiors-title "Interiors planned to the last fixture."  [1440]
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on span
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#interiors > div.wrap.interiors__wrap > div.sec-head.sec-head--split > div.sec-head  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.interiors__wrap > div.interiors__body > ol.isheets > li.isheet:nth-of-type(1) "I-  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.interiors__wrap > div.interiors__body > ol.isheets > li.isheet:nth-of-type(2) "I-  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.interiors__wrap > div.interiors__body > ol.isheets > li.isheet:nth-of-type(3) "I-  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.interiors__wrap > div.interiors__body > ol.isheets > li.isheet:nth-of-type(4) "I-  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.interiors__wrap > div.interiors__body > ol.isheets > li.isheet:nth-of-type(5) "I-  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#interiors > div.wrap.interiors__wrap > div.interiors__body > div.frame.frame--phot  [1440]
+       starts "scale" (1.4 s) the moment it is scrolled into view (an IntersectionObserver) on img
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#visualization "V 3D VIEWS 3D views of your house before"  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver) on p.label.mono
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.voices__grid > div.voices__side > div.sec-head > p.label.mono "C CLIENTS"  [1440, 390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    h2#voices-title "What owners say once the plans are filed"  [1440, 390]
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on span
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#clients > div.wrap.voices__grid > div.frame.frame--photo  [1440, 390]
+       starts "scale" (1.4 s) the moment it is scrolled into view (an IntersectionObserver) on img
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.voices__grid > div.voices__side > ul.voices__list > li.voice:nth-of-type(1) "Our   [1440, 390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.voices__grid > div.voices__side > ul.voices__list > li.voice:nth-of-type(2) "We h  [1440, 390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.voices__grid > div.voices__side > ul.voices__list > li.voice:nth-of-type(3) "The   [1440, 390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#questions "Q QUESTIONS Questions about plans and pe"  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver) on p.label.mono
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#process > div.wrap.process__wrap > div.process__body > div.frame.process__frame  [1440]
+       starts an animation (1.6 s) the moment it is scrolled into view (an IntersectionObserver) on img
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#process > div.wrap.process__wrap > div.sec-head > p.label.mono "W PROCESS"  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    h2#process-title "Four steps from first message to signed "  [1440]
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on span
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.process__wrap > div.process__body > ol.steps > li.step:nth-of-type(1) "STEP 01 Pr  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.process__wrap > div.process__body > ol.steps > li.step:nth-of-type(2) "STEP 02 Si  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.process__wrap > div.process__body > ol.steps > li.step:nth-of-type(3) "STEP 03 La  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.process__wrap > div.process__body > ol.steps > li.step:nth-of-type(4) "STEP 04 Si  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#quote > div.wrap.quote__grid > div.quote__intro > p.label.mono "R QUOTE"  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    h2#quote-title "Request a quote for your plans."  [1440]
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on span
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#quote > div.wrap.quote__grid > div.quote__side > div.frame.frame--photo  [1440]
+       starts "scale" (1.4 s) the moment it is scrolled into view (an IntersectionObserver) on img
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#quote > div.wrap.quote__grid > div.quote__intro > p.quote__lead "Tell us what you   [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.quote__grid > div.quote__intro > dl.quote__details > div:nth-of-type(1) "EMAIL 8m  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.quote__grid > div.quote__intro > dl.quote__details > div:nth-of-type(2) "FACEBOOK  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.quote__grid > div.quote__intro > dl.quote__details > div:nth-of-type(3) "STUDIO H  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.quote__grid > div.quote__side > form.form > div.field.field--half:nth-of-type(1)   [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.quote__grid > div.quote__side > form.form > div.field.field--half:nth-of-type(2)   [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.quote__grid > div.quote__side > form.form > div.field.field--half:nth-of-type(3)   [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.quote__grid > div.quote__side > form.form > div.field.field--half:nth-of-type(4)   [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.quote__grid > div.quote__side > form.form > div.field:nth-of-type(5) "About the p  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.quote__grid > div.quote__side > form.form > div.form__foot "Send the request"  [1440]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    footer#contact "Plans first, then the build. Start with "  [1440]
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on span
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL button-styles    div.wrap > div.close > div.close__head > a.btn.btn--primary "Request a quote"  [1440]
+       one button style (pill, fill #ecebe6) in 2 heights: 48, 60px ("Request a quote" 60px, "Request a quote" 48px)
+       fix: one primary and one secondary button: one shape, one height per size, one label size
+  FAIL off-grid         h2#work-title > span.rw:nth-of-type(3) > span "condos"  [1440]
+       left edge at 424px, 18px off a common edge of its section at 406px (4 elements)
+       fix: move it onto the page margin, or the column edge its section uses
+  FAIL off-grid         div.wrap.voices__grid > div.voices__side > div.sec-head > p.label.mono "C CLIENTS"  [1440]
+       left edge at 112px, 12px off a common edge of its section at 124px (6 elements, like p)
+       fix: move it onto the page margin, or the column edge its section uses
+  FAIL off-grid         h2#process-title > span.rw:nth-of-type(4) > span "first"  [1440]
+       left edge at 412px, 6px off a common edge of its section at 406px (6 elements, like span.step__n.mono)
+       fix: move it onto the page margin, or the column edge its section uses
+  FAIL contrast         div.hero-text.hero__grid > div.hero__visual > div.hero__float > p.hero__float-head.mono "P  [1440]
+       body text over a picture reads at 3.6:1 at its worst tenth (needs 4.5:1) (and 1 more like it: "Architectural, structura")
+       fix: put the text on a calm part of the picture, or on a solid panel
+  FAIL text-contrast    div.sec-head.sec-head--split > div:nth-of-type(1) > p.label.mono > span "F"  [1440, 390]
+       a caption, label or muted line in #ffffff on #c4562a reads 4.46:1 (needs 4.5:1); 10 like it, like "A", "P", "I"
+       fix: body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels
+  FAIL text-contrast    article.pkg.pkg--wide > div.pkg__body > p.pkg__addons > span.mono "ADD-ONS"  [1440, 390]
+       a caption, label or muted line in #141611 on #2b3f1f reads 1.59:1 (needs 4.5:1)
+       fix: body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels
+  FAIL effect-kind      (the page)  [1440]
+       a service page (--type) moves with the scroll: scroll libraries or timelines (Lenis): effects fit tech, gaming and software pages and a product with a technical subject, never a place, shop or service page (house rule)
+       fix: take the scroll-driven motion off: on a place, shop or service page the page scrolls plainly and the parts sit still
+  FAIL run-on           h1#hero-title "Architectural design studio in Makati"  [1440]
+       "in | Makati": the heading runs its first sentence into the grey second one with no stop
+       fix: end the heading's first sentence with a full stop before its grey second one ("Rooms and prices. Breakfast included.")
+  FAIL section-air      section#approach > div.band "Architectural design and planningCAD dra"  [1440]
+       a top border across 113% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)
+       fix: take the rule out: sections and their parts are parted by their ground and the air between them
+  FAIL container-edges  div.progress  [1440]
+       a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)
+       fix: build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing
+  FAIL container-edges  section#approach > div.band "Architectural design and planningCAD dra"  [1440]
+       a child of section 6 beside its .wrap is no valid background layer: not img, picture, video or canvas; z-index auto, not 0; covers 10% of the section height, needs 90%; not aria-hidden="true" (SR-6)
+       fix: build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing
+  FAIL container-edges  div.wrap.hero__wrap > div.hero-text.hero__grid > div.hero__text > p.hero__notice "Building  [1440]
+       1 text block starts on a left line at x 118, 38px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (SR-6)
+       fix: start the text on the container's left, or on the one split line every split shares
+  FAIL container-edges  div.g2__row:nth-of-type(1) > article.pkg.pkg--wide > div.pkg__body > p.pkg__sheet.mono "P-  [1440]
+       5 text blocks start on a left line at x 112, 32px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (also "Complete plans and building perm", "from ₱30,000", "Add-ons 
+       fix: start the text on the container's left, or on the one split line every split shares
+  FAIL row-lines        section#approach > div.band "Architectural design and planningCAD dra"  [1440]
+       a clipped carousel: its window runs 0-1440px, not on the container at 80-1360px; 1 item cut at rest (SR-7)
+       fix: show every item inside the container, or stack them: no sideways scroller, no half-cut carousel
+  FAIL row-lines        section#approach > div.band > div.band__track > ul.band__set:nth-of-type(1) "Architectural  [1440]
+       a row item is cut by a frame round it: 1440 x 56px of its 5481 x 56px shows (SR-7)
+       fix: show the row item whole: no frame cutting it
+  FAIL row-lines        div.band > div.band__track > ul.band__set:nth-of-type(1) > li:nth-of-type(6) "Renovation a  [1440]
+       a row item is cut by a frame round it: 422 x 56px of its 710 x 56px shows (SR-7)
+       fix: show the row item whole: no frame cutting it
+  FAIL row-lines        div.band > div.band__track > ul.band__set:nth-of-type(1) > li:nth-of-type(4) "Architectura  [1440]
+       a row item is cut by a frame round it: 574 x 56px of its 614 x 56px shows (SR-7)
+       fix: show the row item whole: no frame cutting it
+  FAIL split-pair       section#packages > div.wrap > div.g2__row:nth-of-type(1) > article.pkg.pkg--wide "P-01 · F  [1440]
+       the two columns of the split start 33px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)
+       fix: top-align both columns of the split (align-items: start)
+  FAIL scroll-reveal    div.wrap > div.services__body > ol.svc-list > li:nth-of-type(1) "A-01 Architectural design  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap > div.services__body > ol.svc-list > li:nth-of-type(3) "A-03 3D architectural vis  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap > div.services__body > ol.svc-list > li:nth-of-type(4) "A-04 Architectural docume  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap > div.services__body > ol.svc-list > li:nth-of-type(5) "A-05 Design consultation"  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap > div.services__body > ol.svc-list > li:nth-of-type(6) "A-06 Renovation and inter  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap > div.services__body > ol.svc-list > li:nth-of-type(7) "A-07 As-built drawings"  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap > div.services__body > ol.svc-list > li:nth-of-type(9) "A-09 Kiosk designs"  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.g2__row:nth-of-type(1) > div.sec-head.sec-head--split > div > p.label.mono "P PACKAGES  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    h2#packages-title "Packages and prices. Three ways to start"  [390]
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on span
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap > div.g2__row:nth-of-type(1) > div.sec-head.sec-head--split > p.sec-head__lead "E  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#packages > div.wrap > div.g2__row:nth-of-type(1) > article.pkg.pkg--wide "Complete  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#packages > div.wrap > div.g2__row.pkg-pair > article.pkg:nth-of-type(1) "Condo and  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#packages > div.wrap > div.g2__row.pkg-pair > article.pkg:nth-of-type(2) "As-built   [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#interiors "I INTERIORS Interiors planned to the las"  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver) on p.label.mono
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap.viz > div.viz__head > div:nth-of-type(1) > p.label.mono "V 3D VIEWS"  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    h2#viz-title "3D views of your house before it is buil"  [390]
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on span
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#visualization > div.wrap.viz > div.viz__head > div.viz__side "Walk around the desi  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#visualization > div.wrap.viz > div.frame.frame--photo  [390]
+       starts "scale" (1.4 s) the moment it is scrolled into view (an IntersectionObserver) on img
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#visualization > div.wrap.viz > dl.viz__list > div:nth-of-type(1) "FACADE Materials  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#visualization > div.wrap.viz > dl.viz__list > div:nth-of-type(2) "ROOMS Furniture,  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#visualization > div.wrap.viz > dl.viz__list > div:nth-of-type(3) "MASSING How the   [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#questions > div.wrap.faq__grid > div.faq__head > p.label.mono "Q QUESTIONS"  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    h2#faq-title "Questions about plans and permits."  [390]
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on span
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#questions > div.wrap.faq__grid > div.faq__head > p.faq__more "Not on the list? Wri  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#questions > div.wrap.faq__grid > div.faq__list > details.qa:nth-of-type(1) "How is  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#questions > div.wrap.faq__grid > div.faq__list > details.qa:nth-of-type(2) "Are th  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#questions > div.wrap.faq__grid > div.faq__list > details.qa:nth-of-type(3) "What i  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#questions > div.wrap.faq__grid > div.faq__list > details.qa:nth-of-type(4) "Do you  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#questions > div.wrap.faq__grid > div.faq__list > details.qa:nth-of-type(5) "Can yo  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#quote "R QUOTE Request a quote for your plans. "  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver) on p.label.mono
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    h2#close-title "Plans first, then the build. Start with "  [390]
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on span
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div.wrap > div.close > div.close__head > a.btn.btn--primary "Request a quote"  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    footer#contact > div.wrap > div.close > div.frame.frame--photo  [390]
+       starts "scale" (1.4 s) the moment it is scrolled into view (an IntersectionObserver) on img
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    footer#contact > div.wrap > div.titleblock > div.tb.tb--brand  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    footer#contact > div.wrap > div.titleblock > div.tb:nth-of-type(2) "SHEETS Work Services I  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    footer#contact > div.wrap > div.titleblock > div.tb:nth-of-type(3) "STUDIO Harvard Street,  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    footer#contact > div.wrap > div.titleblock > div.tb.tb--legal "SHEET 01 OF 01 © 2026 8MTS.  [390]
+       starts "opacity" (0.9 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL photo-upscale    div.services__body > div.services__visual > div.frame.frame--photo > img "img: Scale model  [390]
+       massing-model.CbEqStoE_Z2p64sI.webp: 390x222 shown at 401x301, blown up 1.35x
+       fix: use a source at least as wide as the picture is shown (twice that for sharp screens)
+  FAIL bleed-one-side   #approach ul.band__set "Architectural design and plannin"  [1440, 390]
+       runs from x 5481.2 out to the right viewport edge; the left side stays at 80
+       fix: bleed the visual to both edges or keep it on the .wrap lines
+  FAIL sparse           #work section.section.work-sec "F Finished workFinished houses, "  [1440, 390]
+       its content fills 6% of its screen; merge it or give it its visual (0.55 is the aim)
+       fix: fill the section or make it a screen shorter
+  FAIL sparse           #packages section.section.packages "P PackagesPackages and prices. T"  [1440, 390]
+       its content fills 6% of its screen; merge it or give it its visual (0.55 is the aim)
+       fix: fill the section or make it a screen shorter
+  FAIL sparse           #questions section.section.faq "Q QuestionsQuestions about plans"  [1440, 390]
+       its content fills 26% of its screen; merge it or give it its visual (0.55 is the aim)
+       fix: fill the section or make it a screen shorter
+  FAIL sparse           #quote section.section.ground-surface "R QuoteRequest a quote for your "  [1440, 390]
+       its content fills 20% of its screen; merge it or give it its visual (0.55 is the aim)
+       fix: fill the section or make it a screen shorter
+  FAIL screen-height    #work section.section.work-sec "F Finished workFinished houses, "  [390]
+       2301px, 2.73 screens; a section is exactly one or two (--h), or on a phone at least one that its content fills
+       fix: make the section exactly one or two screens (--h: 1 or 2)
+  FAIL screen-height    #visualization section.section.visualization "V 3D views3D views of your house"  [390]
+       926px, 1.10 screens; a section is exactly one or two (--h), or on a phone at least one that its content fills
+       fix: make the section exactly one or two screens (--h: 1 or 2)
+  FAIL screen-height    #questions section.section.faq "Q QuestionsQuestions about plans"  [390]
+       1131px, 1.34 screens; a section is exactly one or two (--h), or on a phone at least one that its content fills
+       fix: make the section exactly one or two screens (--h: 1 or 2)
+  WAIVED card-layout section#work: The sections share only the photo frame class: a row of project tiles, a list beside a photo, open package cards, a sheet list beside a photo, a full-width band, quotes beside a photo and a form under a strip are different compositions.
+  40 WARN (not blocking), first: cut-text div.band__track > ul.band__set:nth-of-ty; scroll-reveal section#approach > div.wrap > p.mo-wh__t; scroll-reveal section#approach > div.wrap > p.label.mo; text-only section#questions "Questions about plans; copy-headings h2#work-title "Finished houses, condos a
+A FAIL you judge false: add {"check": "<id>", "target": "<its where, enough to name that one finding>", "reason": "<why, 12+ characters>"} to .taste-skill/waivers.json (one finding each, 5 at most, never for kit-edited or checker-gaming); it goes in your report. Never edit the kit's files or hide the page from the checker.
+GATE: FAIL 117 (round 1 of 3)

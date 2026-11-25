@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import credits from '../data/credits.json';
+
+const names: Record<string, string> = {
+	f151572322: 'Courtyard house model (Services)',
+	f151572530: 'Villa model with pool (3D views)',
+	f184252234: 'Blueprint of an electrical layout (Packages)',
+	f171129895: 'Ink floor plan (Process)',
+	f16199934: 'House under construction (footer)',
+	f114477548: 'Makati avenue (Quote)',
+	'u-4vioYQ9Nn9Y': 'Two-storey residence at dusk (Finished work)',
+	'u-12WFO8yWrsw': 'Corner condo living room (Finished work)',
+	'u-aDGbdTsBZg': 'Kitchen renovation (Finished work)',
+	'u-_TPTXZd9mOo': 'House with a lap pool (Finished work)',
+	'u-B74lBYC3PXI': 'Office fit-out (Finished work)',
+	'u-eHD8Y1Znfpk': 'Loft studio office (Finished work)',
+	'u-pt0nGH-NvoA': 'Lobby interior (Interiors)',
+	'u-OtXADkUh3-I': 'Condo living room (Clients)',
+};
+---
+
+<Layout title="Photo credits · 8MTS. Architectural Design Studio" description="Sources and licences of the photographs used on the 8MTS. Architectural Design Studio website.">
+	<section class="section credits" aria-labelledby="credits-title">
+		<div class="wrap">
+			<p class="label mono"><span>C</span> Credits</p>
+			<h1 class="h2" id="credits-title">Photograph credits and licences.</h1>
+			<p class="credits__lead">
+				The house render, the condo interior and the as-built photograph are the studio's own. These photographs come
+				from Unsplash and Wikimedia Commons, resized and cropped for this site.
+			</p>
+			<ul class="credits__list">
+				{
+					credits.map((c) => (
+						<li>
+							<span class="credits__what">{names[c.id]}</span>
+							<span>
+								<a class="u-link" href={c.page} target="_blank" rel="noopener noreferrer">
+									{c.by}
+								</a>
+								,{' '}
+								<a class="u-link" href={c.licenceUrl} target="_blank" rel="noopener noreferrer">
+									{c.licence}
+								</a>
+							</span>
+						</li>
+					))
+				}
+			</ul>
+		</div>
+	</section>
+</Layout>

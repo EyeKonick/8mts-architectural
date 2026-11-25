@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets';
+import Icon from './Icon.astro';
+import { images } from '../data/site';
+
+const views = [
+	{ k: 'Facade', v: 'Materials, colours and the street view' },
+	{ k: 'Rooms', v: 'Furniture, light and finishes in place' },
+	{ k: 'Massing', v: 'How the house sits on its lot' },
+];
+---
+
+<section class="section visualization" id="visualization" aria-labelledby="viz-title">
+	<div class="wrap viz">
+		<div class="viz__head">
+			<div>
+				<p class="label mono"><span>V</span> 3D views</p>
+				<h2 class="h2" id="viz-title">3D views of your house <em>before it is built.</em></h2>
+			</div>
+			<div class="viz__side">
+				<p class="viz__lead">
+					Walk around the design and change what you do not like while it is still lines on a screen.
+				</p>
+				<a class="link-arrow" href="#quote" data-package="3D visualization">
+					Request a 3D view <Icon name="arrow-right" />
+				</a>
+			</div>
+		</div>
+		<div class="frame frame--photo viz__frame">
+			<Image
+				src={images.villaModel}
+				alt="Model of a white flat-roofed villa with a long pool, lawn and palm trees"
+				widths={[960, 1400, 1800]}
+				sizes="100vw"
+				data-source="stand-in"
+				data-subject="architectural model of a villa"
+				style="object-position: 50% 58%"
+			/>
+		</div>
+		<dl class="viz__list">
+			{
+				views.map((r) => (
+					<div>
+						<dt class="mono">{r.k}</dt>
+						<dd>{r.v}</dd>
+					</div>
+				))
+			}
+		</dl>
+	</div>
+</section>

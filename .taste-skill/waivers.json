@@ -1,0 +1,3 @@
+[
+  {"check": "card-layout", "target": "section#work", "reason": "The sections share only the photo frame class: a row of project tiles, a list beside a photo, open package cards, a sheet list beside a photo, a full-width band, quotes beside a photo and a form under a strip are different compositions."}
+]

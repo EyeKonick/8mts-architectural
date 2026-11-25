@@ -1,0 +1,80 @@
+---
+import '@fontsource-variable/host-grotesk/wght.css';
+import '@fontsource/ibm-plex-mono/400.css';
+import '@fontsource/ibm-plex-mono/500.css';
+import '@fontsource/instrument-serif/400-italic.css';
+import '../styles/global.css';
+import '../styles/fx.css';
+
+import Header from '../components/Header.astro';
+import Closing from '../components/Closing.astro';
+import { company } from '../data/site';
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const {
+	title = '8MTS. Architectural Design Studio in Makati',
+	description = company.description,
+} = Astro.props;
+
+const site = Astro.site ?? new URL('https://8mts.example');
+const share = new URL('/share.jpg', site).href;
+---
+
+<!doctype html>
+<html lang="en" data-type="service" data-radius="soft" data-buttons="arrow">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="page-type" content="service" />
+		<meta name="site-kind" content="other" />
+		<meta name="theme-color" content="#151a12" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content={share} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<script is:inline>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+		<script is:inline>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+		<link rel="modulepreload" href="/assets/moments/moments.js" />
+		<link rel="modulepreload" href="/assets/moments/lib.js" />
+		<script is:inline>
+			// `.js` turns on the hidden "before" state of the hero entrance. Fail-safe: if the
+			// motion script has not started within 2.5s, drop it so everything shows at rest.
+			(function () {
+				var root = document.documentElement;
+				root.classList.add('js');
+				setTimeout(function () {
+					if (!root.classList.contains('motion-ready')) root.classList.remove('js');
+				}, 2500);
+			})();
+		</script>
+	</head>
+	<body>
+		<div class="progress" aria-hidden="true"><i data-progress></i></div>
+		<div class="cursor-badge" aria-hidden="true" data-cursor-badge>View</div>
+		<!--
+			kind: service (an architectural design studio, people are hired)
+			deal: hero split (house render right) on a deep ink-green ground · palette: the client's own (logo black, drafting paper, the forest green of its package posts) plus a clay accent, asked for by the client brief ("add some colors")
+			type: Host Grotesk + IBM Plex Mono labels · radius soft · nav-centre · footer-dark · close-photo
+			rhythm: surface-pairs (packages, process) · buttons arrow · mark: the client's logo
+			moments: word-highlight (#approach), picture-develops film (#process)
+		-->
+		<Header />
+		<main id="main">
+			<slot />
+		</main>
+		<Closing />
+		<script>
+			import '../scripts/main';
+		</script>
+		<script is:inline type="module" src="/assets/moments/moments.js"></script>
+	</body>
+</html>

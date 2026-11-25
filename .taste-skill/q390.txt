@@ -1,0 +1,283 @@
+consistency  D:\AI Agency\Alipato Projects\8mts\dist\index.html
+--quick: not checked: scroll-linked (stepping), scroll-reveal (the reveal walk; IntersectionObserver reveals are read), hover-spill, hidden-visual, loop-pause, forms, reduced-motion, the dead-IntersectionObserver walk (hidden content is read with scripts off and under reduced motion), hover-move, hero-screen (rhythm: no width of this run is one it runs at), section-height (rhythm: no width of this run is one it runs at), section-air (rhythm: no width of this run is one it runs at), one-section (rhythm: no width of this run is one it runs at), one-heading (rhythm: no width of this run is one it runs at), container-edges (rhythm: no width of this run is one it runs at), row-lines (rhythm: no width of this run is one it runs at), split-pair (rhythm: no width of this run is one it runs at), motion-layer (motion-hooks: no width of this run is one it runs at), count-text (motion-hooks: no width of this run is one it runs at), loop-cycle (motion-hooks: no width of this run is one it runs at). Still told: IntersectionObserver reveals (scroll-reveal), held sections (pinned) and CSS scroll timelines (scroll-linked); faults inside held or [data-big-scene] sections are WARNs
+
+390x844  21 screens  54 FAIL  20 WARN
+  FAIL scroll-reveal   section#work  "F FINISHED WORK Finished houses, condos "
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on p.label.mono  [390-08-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   section#services > div.wrap > div.sec-head > p.label.mono  "A SERVICES"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-11-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   h2#services-title  "Nine design and drafting services. One s"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on span  [390-12-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap > div.services__body > ol.svc-list > li:nth-of-type(1)  "A-01 Architectural design and planning"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-13-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap > div.services__body > ol.svc-list > li:nth-of-type(2)  "A-02 CAD drafting and construction drawi"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-14-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap > div.services__body > ol.svc-list > li:nth-of-type(3)  "A-03 3D architectural visualization"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-16-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap > div.services__body > ol.svc-list > li:nth-of-type(4)  "A-04 Architectural documentation"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-17-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap > div.services__body > ol.svc-list > li:nth-of-type(5)  "A-05 Design consultation"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-18-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap > div.services__body > ol.svc-list > li:nth-of-type(6)  "A-06 Renovation and interior planning"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-19-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap > div.services__body > ol.svc-list > li:nth-of-type(7)  "A-07 As-built drawings"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-20-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap > div.services__body > ol.svc-list > li:nth-of-type(8)  "A-08 Commercial and interior fit-out des"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-21-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap > div.services__body > ol.svc-list > li:nth-of-type(9)  "A-09 Kiosk designs"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-22-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap > div.services__body > div.services__visual > div.frame.frame--photo
+       starts "scale" (1.4 s) the moment it is scrolled into view (an IntersectionObserver) on img  [390-23-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   section#packages  "P PACKAGES Packages and prices. Three wa"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on p.label.mono  [390-25-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   section#interiors  "I INTERIORS Interiors planned to the las"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on p.label.mono  [390-28-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   section#visualization  "V 3D VIEWS 3D views of your house before"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on p.label.mono  [390-32-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   section#clients  "C CLIENTS What owners say once the plans"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on p.label.mono  [390-35-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   section#questions > div.wrap.faq__grid > div.faq__head > p.label.mono  "Q QUESTIONS"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-36-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   h2#faq-title  "Questions about plans and permits."
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on span  [390-37-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   section#questions > div.wrap.faq__grid > div.faq__head > p.faq__more  "Not on the list? Write to the studio and"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-38-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   section#questions > div.wrap.faq__grid > div.faq__list > details.qa:nth-of-type(1)  "How is the final price set? Package pric"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-39-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   section#questions > div.wrap.faq__grid > div.faq__list > details.qa:nth-of-type(2)  "Are the plans signed and sealed? Yes. Th"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-40-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   section#questions > div.wrap.faq__grid > div.faq__list > details.qa:nth-of-type(3)  "What is an as-built plan for? It documen"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-43-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   section#questions > div.wrap.faq__grid > div.faq__list > details.qa:nth-of-type(4)  "Do you design condo units and small shop"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-44-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   section#questions > div.wrap.faq__grid > div.faq__list > details.qa:nth-of-type(5)  "Can you help with the DOLE CHSP applicat"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-45-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   section#process > div.wrap.process__wrap > div.sec-head > p.label.mono  "W PROCESS"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-46-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   h2#process-title  "Four steps from first message to signed "
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on span  [390-47-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap.process__wrap > div.process__body > ol.steps > li.step:nth-of-type(1)  "STEP 01 Project brief and location Messa"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-49-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap.process__wrap > div.process__body > ol.steps > li.step:nth-of-type(2)  "STEP 02 Site visit and measurements We s"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-50-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap.process__wrap > div.process__body > ol.steps > li.step:nth-of-type(3)  "STEP 03 Layouts, 3D views and plans Layo"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-51-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap.process__wrap > div.process__body > ol.steps > li.step:nth-of-type(4)  "STEP 04 Signed and sealed plans Qualifie"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-52-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   section#process > div.wrap.process__wrap > div.process__body > div.frame.process__frame
+       starts an animation (1.6 s) the moment it is scrolled into view (an IntersectionObserver) on img  [390-53-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   section#quote > div.wrap.quote__grid > div.quote__intro > p.label.mono  "R QUOTE"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-54-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   h2#quote-title  "Request a quote for your plans."
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on span  [390-55-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   section#quote > div.wrap.quote__grid > div.quote__intro > p.quote__lead  "Tell us what you want to build or docume"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-56-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap.quote__grid > div.quote__intro > dl.quote__details > div:nth-of-type(1)  "EMAIL 8mts.designstudio@gmail.com"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-57-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap.quote__grid > div.quote__intro > dl.quote__details > div:nth-of-type(2)  "FACEBOOK AND MESSENGER 8MTS Architectura"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-58-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap.quote__grid > div.quote__intro > dl.quote__details > div:nth-of-type(3)  "STUDIO Harvard Street, Makati"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-59-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   section#quote > div.wrap.quote__grid > div.quote__side > div.frame.frame--photo
+       starts "scale" (1.4 s) the moment it is scrolled into view (an IntersectionObserver) on img  [390-60-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap.quote__grid > div.quote__side > form.form > div.field.field--half:nth-of-type(1)  "Your name"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-61-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap.quote__grid > div.quote__side > form.form > div.field.field--half:nth-of-type(2)  "Email address"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-62-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap.quote__grid > div.quote__side > form.form > div.field.field--half:nth-of-type(3)  "Package or service Choose one Building p"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-63-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap.quote__grid > div.quote__side > form.form > div.field.field--half:nth-of-type(4)  "Project location City or district"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-64-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap.quote__grid > div.quote__side > form.form > div.field:nth-of-type(5)  "About the project"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-65-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   div.wrap.quote__grid > div.quote__side > form.form > div.form__foot  "Send the request"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver)  [390-66-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal   footer#contact  "Plans first, then the build. Start with "
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on span  [390-68-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL card-layout     section#work
+       one layout (.frame--photo) in 6 sections: section#work, section#services, section#interiors, section#visualization, section#clients, section#quote; a card layout at most twice  [390-09-card-layout.jpg]
+       fix: a card layout at most twice on a page: build the other sections another way
+  FAIL copy-headings   h2#work-title  "Finished houses, condos and offices acro"
+       "Finished houses, condos and offices across Metro Manila." names no product, part, place or section (4 headings like it; at most one brand line per page) (and 3 more like it: "Condo and interior packa", "Building permit package", "As-built package")  [390-03-copy-headings.jpg]
+       fix: name the thing in every heading: the product, a part, the place or a section noun
+  FAIL off-grid        h2#work-title > span.rw:nth-of-type(5) > span  "offices"
+       left edge at 186px, 17px off a common edge of its section at 203px (6 elements)  [390-04-off-grid.jpg]
+       fix: move it onto the page margin, or the column edge its section uses
+  FAIL off-grid        h2#interiors-title > em > span.rw:nth-of-type(3) > span  "last"
+       left edge at 81px, 7px off a common edge of its section at 88px (10 elements, like p.isheet__title)  [390-27-off-grid.jpg]
+       fix: move it onto the page margin, or the column edge its section uses
+  FAIL off-grid        h2#voices-title > em > span.rw:nth-of-type(2) > span  "the"
+       left edge at 72px, 24px off a common edge of its section at 48px (7 elements, like p.label.mono)  [390-33-off-grid.jpg]
+       fix: move it onto the page margin, or the column edge its section uses
+  FAIL section-gaps    section#work / section#services
+       252px between these sections, +67% against the median 151px  [390-15-section-gaps.jpg]
+       fix: use one gap between sections (all within 25% of each other)
+  FAIL effect-kind     (the page)
+       a service page (--type) moves with the scroll: scroll libraries or timelines (Lenis): effects fit tech, gaming and software pages and a product with a technical subject, never a place, shop or service page (house rule)
+       fix: take the scroll-driven motion off: on a place, shop or service page the page scrolls plainly and the parts sit still
+  FAIL run-on          h1#hero-title  "Architectural design studio in Makati"
+       "in | Makati": the heading runs its first sentence into the grey second one with no stop  [390-01-run-on.jpg]
+       fix: end the heading's first sentence with a full stop before its grey second one ("Rooms and prices. Breakfast included.")
+  WARN cut-text        div.band__track > ul.band__set:nth-of-type(1) > li:nth-of-type(6) > span  "Renovation and interior planning"
+       cut 286px at the left by the overflow of section#approach > div.band (inside a held section or scroll scene, whose motion --quick does not check)  [390-30-cut-text.jpg]
+       fix: give the text room: no overflow clipping a line, no line past its box
+  WARN scroll-reveal   section#approach  "S HOW WE DRAW Your plans, your requireme"
+       starts "translate" (1.0 s) the moment it is scrolled into view (an IntersectionObserver) on p.label.mono (inside a dealt moment's section, [data-moment]: an enter moment is expected on every kind; its still is judged under reduced motion)  [390-31-scroll-reveal.jpg]
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  WARN no-visual       section#interiors  "Interiors planned to the last fixture."
+       pictures, effects and mocks cover 20% of this section; a feature section needs a visual (about 25% or more)  [390-29-no-visual.jpg]
+       fix: give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits
+  WARN text-only       section#questions  "Questions about plans and permits."
+       the section is only text: no picture, icon, mock or effect in it  [390-41-text-only.jpg]
+       fix: give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground
+  WARN button-styles   div.wrap > div.close > div.close__head > a.btn.btn--primary  "Request a quote"
+       on the phone 2 buttons run the full width of their column, but  "Request a quote" is 201px of 358px: one action in two sizes  [390-67-button-styles.jpg]
+       fix: give every button the same width rule on the phone: all full width, or all at their own width
+  WARN section-gaps    section#process / section#quote
+       219px between these sections, +37% against the median 160px of gaps at a change of ground  [390-69-section-gaps.jpg]
+       fix: use one gap between sections (all within 25% of each other)
+  WARN section-gaps    section#top / section#work
+       uneven space at the edge of a band: 103px outside its edge, 24px inside it (the space on either side of a change of ground reads as one gap only when the two match)  [390-05-section-gaps.jpg]
+       fix: use one gap between sections (all within 25% of each other)
+  WARN section-gaps    section#visualization / section#clients
+       uneven space at the edge of a band: 50px outside its edge, 103px inside it (the space on either side of a change of ground reads as one gap only when the two match)  [390-34-section-gaps.jpg]
+       fix: use one gap between sections (all within 25% of each other)
+  WARN section-gaps    section#clients / section#questions
+       uneven space at the edge of a band: 99px outside its edge, 48px inside it (the space on either side of a change of ground reads as one gap only when the two match)  [390-42-section-gaps.jpg]
+       fix: use one gap between sections (all within 25% of each other)
+  WARN section-gaps    section#questions / section#process
+       uneven space at the edge of a band: 63px outside its edge, 103px inside it (the space on either side of a change of ground reads as one gap only when the two match)  [390-48-section-gaps.jpg]
+       fix: use one gap between sections (all within 25% of each other)
+  WARN proximity       div.g2__row.work-row:nth-of-type(1) > div.work-grid > a.work.work--s6 > span.frame.frame--photo  "Two-storey residence RESIDENTIAL · ALABA"
+       stacked at this width, the visual starts 12px under the text and buttons above it ("Two-storey residence RESIDENTI"): it reads glued to them (and 1 more like it: "House with a lap pool RE")  [390-06-proximity.jpg]
+       fix: give the stacked split the section's own gap between text and visual (40px or more on a phone)
+  WARN links           div.plans > article.plan:nth-of-type(1) > div.plan__body > a.link-arrow.plan__cta  "Request this package"
+       3 "Request this package" links in 3 cards all go to #quote: none says which one was chosen  [390-24-links.jpg]
+       fix: let each link carry its choice (#booking?room=fjara, a preset the form reads), or name the shared target ("Book a room")
+  WARN photo-set       div.work-grid > a.work.work--s6 > span.frame.frame--photo > img  "work-residence-dusk.BHsfSFbO_2rPSP5.webp"
+       13 photographs in more than one look: lightness from 0.26 to 0.92; saturation from 0.06 to 0.36; the odd one out is work-residence-dusk.BHsfSFbO_2rPSP5.webp  [390-07-photo-set.jpg]
+       fix: grade the photographs to one look (light, colour, warmth), or replace the odd one out
+  WARN photo-credit    (the page text)
+       2 library sources (unsplash, wikimedia): the page credits unsplash, the page credits wikimedia; confirm each shows the client's own product, place or people
+       fix: confirm the library photograph shows the client's own product, place or people; otherwise replace it
+  WARN nav-family      header.nav.nav-centre
+       the nav changes form as the page scrolls: its fill changes from none to #ecebe6  [390-10-nav-family.jpg]
+       fix: keep one nav on every screen: the same bar, fill, links and type
+  WARN nav-labels      header.nav.nav-centre > a.skip-link  "Skip to content"
+       "Skip to content" opens a section headed "Architectural design studio in Makati"
+       fix: name each nav link after the heading of the section it opens
+  WARN nav-labels      header.nav.nav-centre > div.wrap.nav__bar > nav.nav__links > a.nav__link:nth-of-type(1)  "Work"
+       "Work" opens a section headed "Finished houses, condos and offices across Metro M"
+       fix: name each nav link after the heading of the section it opens
+  WARN nav-labels      header.nav.nav-centre > div.wrap.nav__bar > nav.nav__links > a.nav__link:nth-of-type(5)  "Process"
+       "Process" opens a section headed "Four steps from first message to signed plans."
+       fix: name each nav link after the heading of the section it opens
+  WARN link-styles     div.hero-text.hero__grid > div.hero__text > div.hero__actions > a.btn.btn--secondary  "See the packages"
+       text links in 3 looks: no line, regular (5, like "See the packages"); underline, regular (7, like "Start your project"); border 1px, regular (9, like "A-01 Architectural d")  [390-02-link-styles.jpg]
+       fix: give text links one look wherever they sit: one underline, one weight
+  WARN grounds         section#packages > div.wrap.plans-wrap > div.plans > article.plan.plan--featured  "P-01 · FOR A NEW HOUSE OR BUILDING Build"
+       4 flat grounds across the page (#ecebe6 section x8, #2b3f1f band x2, #e1e0d9 section x2, #151a12 section x2): three at most (the base, a surface, an inverse)  [390-26-grounds.jpg]
+       fix: three flat grounds at most (the base, one surface, one inverse): lay the other bands on one of them
+
+first screen at 1280, 1152, 1024, 896, 768  0 FAIL  0 WARN
+
+the page at 320x640, walked for what runs past the screen's edge  0 FAIL
+
+checks
+  PASS assets                 PASS shader-lint            PASS gl-fallback            
+  PASS empty-visual           PASS hero-fill              PASS flush                  
+  PASS placeholder            PASS sample-label           PASS caption                
+  PASS credit-wall            PASS nav                    PASS nav-covers             
+  PASS spill                  PASS off-viewport           PASS fold-card              
+  SKIP hover-spill            PASS overlap-text           PASS collide                
+  PASS tap-size               PASS row-gap                WARN cut-text               
+  PASS fold-cut               PASS marquee                SKIP scroll-linked          
+  FAIL scroll-reveal          PASS pinned                 SKIP loop-pause             
+  SKIP reduced-motion         PASS hidden-content         PASS webgl                  
+  WARN no-visual              WARN text-only              PASS card-visual            
+  SKIP hidden-visual          PASS card-family            FAIL card-layout            
+  PASS nesting                PASS effect-repeat          PASS ui-fit                 
+  PASS ui-centre              PASS dark-ground            WARN button-styles          
+  PASS button-shape           PASS same-action            PASS button-picture         
+  PASS cta                    PASS pricing-tiers          PASS copy-headline          
+  PASS copy-fact              FAIL copy-headings          PASS copy-buttons           
+  PASS copy-actions           PASS heading-scale          PASS stagger                
+  PASS top-stagger            FAIL off-grid               PASS col-edge               
+  PASS right-edge             PASS centre-axis            PASS tilt                   
+  PASS contrast               PASS text-contrast          PASS body-size              
+  PASS busy-ground            FAIL section-gaps           WARN proximity              
+  PASS hole                   WARN links                  SKIP forms                  
+  PASS photo-upscale          WARN photo-set              WARN photo-credit           
+  WARN nav-family             WARN nav-labels             WARN link-styles            
+  PASS heading-align          PASS label-centre           PASS fake-button            
+  PASS stranded-action        PASS orphan                 PASS unit-break             
+  PASS tab-wrap               PASS effects-fit            PASS fade-cut               
+  PASS photo-weight           PASS copy-length            PASS nav-current            
+  PASS progress-bar           PASS photo-repeat           PASS button-contrast        
+  PASS photo-print            WARN grounds                PASS split-align            
+  PASS fact-agree             PASS fold-action            PASS action-count           
+  PASS one-screen             SKIP hover                  SKIP hover-move             
+  PASS product-shown          PASS same-object            PASS font-load              
+  PASS visual-caption         PASS visual-empty           FAIL effect-kind            
+  PASS hero-enter             PASS moment-none            PASS street-number          
+  PASS postcode               PASS coordinates            PASS company-number         
+  PASS phone-number           SKIP hero-screen            SKIP section-height         
+  SKIP section-air            SKIP one-section            SKIP one-heading            
+  SKIP container-edges        SKIP row-lines              SKIP split-pair             
+  SKIP motion-layer           SKIP count-text             SKIP loop-cycle             
+  PASS section-tile           PASS empty-area             PASS a11y-name              
+  PASS img-alt                PASS field-label            PASS heading-order          
+  PASS tabindex               PASS focus-ring             PASS focus-visible          
+  PASS focus-hidden           PASS skip-link              PASS menu-toggle            
+  PASS lang                   PASS page-meta              PASS share-meta             
+  PASS action-repeat          PASS map-link               PASS open-now               
+  PASS assumed                FAIL run-on                 PASS form-fields            
+  PASS form-send              
+
+total  54 FAIL  20 WARN  (crops and report.json in D:\AI Agency\Alipato Projects\8mts\dist\.taste-skill\consistency)

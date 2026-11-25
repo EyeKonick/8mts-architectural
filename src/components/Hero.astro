@@ -1,0 +1,67 @@
+---
+import { Image } from 'astro:assets';
+import Icon from './Icon.astro';
+import { images, primary } from '../data/site';
+
+// The h1, split into words so each one rises out of its own mask on load.
+const words = 'Architectural design studio in Makati'.split(' ');
+---
+
+<section class="hero ground-deep" id="top" aria-labelledby="hero-title" data-enter data-hero>
+	<div class="wrap hero__wrap">
+		<div class="hero-text hero__grid">
+		<div class="hero__text">
+			<p class="hero__notice" data-step style="--i:0">
+				Building permit plans from ₱30,000
+			</p>
+			<h1 class="hero__title" id="hero-title">
+				{
+					words.map((w, i) => (
+						<>
+							<span class:list={['w', { 'w--serif': i >= words.length - 2 }]}>
+								<span style={`--w:${i}`}>{w}</span>
+							</span>{' '}
+						</>
+					))
+				}
+			</h1>
+			<p class="hero__lead" data-step style="--i:2">
+				We design houses, condo units, shops and kiosks, then draw the signed and sealed plans your building permit
+				needs.
+			</p>
+			<div class="hero__actions" data-step style="--i:3">
+				<a class="btn btn--primary" href={primary.href}>
+					<span class="btn__label">{primary.label}</span>
+					<span class="btn__icon"><Icon name="arrow-right" /></span>
+				</a>
+				<a class="btn btn--secondary" href="#packages">
+					<span class="btn__label">See the packages</span>
+					<span class="btn__icon"><Icon name="arrow-down" /></span>
+				</a>
+			</div>
+		</div>
+
+		<div class="hero__visual" data-hero-visual>
+			<!-- drafting marks round the frame: a dimension line on top and on the right, crop ticks at the corners -->
+			<span class="dim dim--x" aria-hidden="true"><i></i></span>
+			<div class="frame frame--photo hero__frame crop">
+				<Image
+					src={images.houseExterior}
+					alt="Two-storey house with a white facade, stone-clad wall, timber soffit and a slatted front gate"
+					widths={[640, 960, 1280]}
+					sizes="(max-width: 1023px) 100vw, 44vw"
+					loading="eager"
+					fetchpriority="high"
+					data-source="client"
+					data-subject="house design render"
+				/>
+			</div>
+			<div class="hero__float" data-step style="--i:4">
+				<p class="hero__float-head mono"><span class="pulse" aria-hidden="true"></span> Package P-01</p>
+				<p class="hero__float-title">Plans for every trade, signed and sealed</p>
+				<p class="hero__float-meta">Architectural, structural, plumbing and electrical, with the bill of materials.</p>
+			</div>
+		</div>
+		</div>
+	</div>
+</section>

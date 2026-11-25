@@ -1,0 +1,11 @@
+{
+ "page": "dist/index.html",
+ "url": null,
+ "root": "dist",
+ "kind": "service",
+ "category": "architectural design and planning",
+ "primary": "Request a quote",
+ "rounds": 3,
+ "start": "2026-11-25T16:24:15.066Z",
+ "by": "gate.mjs --start"
+}

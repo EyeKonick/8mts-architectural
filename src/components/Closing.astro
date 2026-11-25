@@ -1,0 +1,63 @@
+---
+import { Image } from 'astro:assets';
+import Icon from './Icon.astro';
+import Logo from './Logo.astro';
+import { company, images, nav, primary } from '../data/site';
+
+const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '';
+const href = (h: string) => (isHome ? h : `/${h}`);
+const year = new Date().getFullYear();
+---
+
+<footer class="closing ground-inverse" id="contact" aria-labelledby="close-title">
+	<div class="wrap">
+		<!-- row 1: close-photo, the head row, then the photograph down to the links -->
+		<div class="close">
+			<div class="close__head">
+				<h2 class="h2" id="close-title">Plans first, then the build. <em>Start with a quote.</em></h2>
+				<a class="btn btn--primary" href={href(primary.href)}>
+					<span class="btn__label">{primary.label}</span>
+					<span class="btn__icon"><Icon name="arrow-right" /></span>
+				</a>
+			</div>
+			<div class="frame frame--photo close__frame">
+				<Image
+					src={images.houseFraming}
+					alt="Two-storey house in timber framing and house wrap, on a cleared lot with trees behind"
+					widths={[900, 1400, 2000]}
+					sizes="100vw"
+					data-source="stand-in"
+					data-subject="house under construction"
+					style="object-position: 50% 42%"
+				/>
+			</div>
+		</div>
+
+		<!-- row 2: footer-dark, set as a drawing's title block -->
+		<div class="titleblock">
+			<div class="tb tb--brand">
+				<a href={isHome ? '#top' : '/'} class="tb__logo" aria-label={`${company.name}, back to top`}>
+					<Logo full />
+				</a>
+			</div>
+			<div class="tb">
+				<p class="tb__k mono">Sheets</p>
+				<nav class="tb__links" aria-label="Footer">
+					{nav.map((n) => <a class="u-link" href={href(n.href)}>{n.label}</a>)}
+				</nav>
+			</div>
+			<div class="tb">
+				<p class="tb__k mono">Studio</p>
+				<p>{company.area}</p>
+				<a class="u-link" href={`mailto:${company.email}`}>{company.email}</a>
+			</div>
+			<div class="tb tb--legal">
+				<p class="tb__k mono">Sheet 01 of 01</p>
+				<p>© {year} {company.name}</p>
+				<p class="tb__credits">
+					<a class="u-link" href="/credits/">Photographs via Unsplash and Wikimedia Commons</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>

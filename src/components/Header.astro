@@ -1,0 +1,63 @@
+---
+import Icon from './Icon.astro';
+import Logo from './Logo.astro';
+import { company, nav, primary } from '../data/site';
+
+const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '';
+const href = (h: string) => (isHome ? h : `/${h}`);
+---
+
+<header class="nav nav-centre" data-header>
+	<a class="skip-link" href="#main">Skip to content</a>
+	<div class="wrap nav__bar">
+		<a class="nav__logo" href={isHome ? '#top' : '/'} aria-label={`${company.name}, back to top`}>
+			<Logo />
+			<span class="nav__sub mono">/Architectural design studio</span>
+		</a>
+
+		<nav class="nav__links" aria-label="Main" data-pill-nav>
+			<span class="nav__indicator" aria-hidden="true" data-pill-indicator></span>
+			{
+				nav.map((item) => (
+					<a class="nav__link" href={href(item.href)} data-nav-link>
+						{item.label}
+					</a>
+				))
+			}
+		</nav>
+
+		<div class="nav__actions">
+			<a class="btn btn--primary btn--sm" href={href(primary.href)}>
+				<span class="btn__label">{primary.label}</span>
+				<span class="btn__icon"><Icon name="arrow-right" /></span>
+			</a>
+		</div>
+
+		<button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open the menu" data-menu-toggle>
+			<span class="nav__toggle-bars" aria-hidden="true"></span>
+		</button>
+	</div>
+</header>
+
+<div class="menu" id="menu" data-menu>
+	<nav aria-label="Menu">
+		<ol class="menu__list">
+			{
+				nav.map((item, i) => (
+					<li style={`--i:${i}`}>
+						<a href={href(item.href)}>
+							{item.label}
+						</a>
+					</li>
+				))
+			}
+		</ol>
+	</nav>
+	<div class="menu__foot">
+		<a class="btn btn--primary" href={href(primary.href)}>
+			<span class="btn__label">{primary.label}</span>
+			<span class="btn__icon"><Icon name="arrow-right" /></span>
+		</a>
+		<a class="u-link" href={`mailto:${company.email}`}>{company.email}</a>
+	</div>
+</div>

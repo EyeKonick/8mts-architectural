@@ -1,0 +1,191 @@
+/* ---------- packages: three plans side by side, the full set featured on green ---------- */
+
+.plans-wrap {
+	display: flex;
+	flex-direction: column;
+}
+.plans {
+	flex: 1;
+	min-height: 0;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: var(--gap);
+	align-items: stretch;
+}
+.plan {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-height: 0;
+	padding: 8px;
+	border-radius: calc(var(--r-lg) + 8px);
+	background: #f4f3ee;
+	box-shadow: inset 0 0 0 1px var(--line);
+	overflow: hidden;
+	isolation: isolate;
+	transition:
+		transform var(--dur-section) var(--ease-out-expo),
+		box-shadow var(--dur-section) var(--ease-out-expo);
+}
+.plan:hover {
+	transform: translateY(-6px);
+	box-shadow: inset 0 0 0 1px var(--line-strong), 0 30px 60px -36px rgb(20 22 17 / 0.45);
+}
+/* a clay light that follows the pointer (fx.ts sets --mx, --my) */
+.plan::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background: radial-gradient(380px circle at var(--mx, 50%) var(--my, 30%), rgb(185 77 35 / 0.12), transparent 65%);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity var(--dur-section) var(--ease);
+}
+.plan:hover::after {
+	opacity: 1;
+}
+.plan__media {
+	display: block;
+	flex: none;
+	height: clamp(120px, 20svh, 200px);
+	border-radius: var(--r-lg);
+}
+.plan__body {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 20px 16px 12px;
+	min-height: 0;
+}
+.plan__sheet {
+	color: var(--p-quiet);
+	font-size: 0.6875rem;
+	margin-bottom: 10px;
+}
+.plan__title {
+	font-size: var(--fs-h3);
+}
+.plan__price {
+	font-family: var(--font-display);
+	font-size: clamp(2rem, 1.4rem + 1.2vw, 2.75rem);
+	line-height: 1;
+	letter-spacing: var(--display-tracking-xl);
+	font-variant-numeric: tabular-nums;
+	margin: 12px 0 18px;
+	white-space: nowrap;
+	transition: color var(--dur-std) var(--ease);
+}
+.plan__from {
+	font-family: var(--font-mono);
+	font-size: 0.6875rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--p-muted);
+	vertical-align: 0.9em;
+	margin-right: 4px;
+}
+.plan__list {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	gap: 6px 16px;
+	width: 100%;
+	padding-top: 16px;
+	border-top: 1px solid var(--line);
+	font-size: 0.875rem;
+	line-height: 1.35;
+}
+.plan__list li {
+	position: relative;
+	padding-left: 18px;
+}
+.plan__list li::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0.3em;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	background: var(--clay) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='white' stroke-width='2.4'%3E%3Cpath d='M4 8.5l2.5 2.5L12 5'/%3E%3C/svg%3E") center / 9px no-repeat;
+}
+.plan__addons {
+	margin-top: 14px;
+	font-size: 0.8125rem;
+	color: var(--p-muted);
+}
+.plan__addons .mono {
+	color: var(--clay-ink);
+	font-size: 0.625rem;
+	margin-right: 6px;
+}
+.plan__cta {
+	margin-top: auto;
+	padding-top: 12px;
+}
+.plan:hover .plan__price {
+	color: var(--clay-ink);
+}
+
+/* the featured plan: forest green, paper text, clay-light details */
+.plan--featured {
+	background: var(--green);
+	color: var(--paper);
+	box-shadow: 0 30px 70px -40px rgb(43 63 31 / 0.9);
+	--line: rgb(236 235 230 / 0.16);
+	--line-strong: rgb(236 235 230 / 0.3);
+	--p-muted: #c8cdbf;
+	--p-quiet: #aab19f;
+}
+.plan--featured:hover {
+	box-shadow: 0 40px 80px -40px rgb(43 63 31 / 0.95);
+}
+.plan--featured::after {
+	background: radial-gradient(380px circle at var(--mx, 50%) var(--my, 30%), rgb(238 154 108 / 0.2), transparent 65%);
+}
+.plan--featured .plan__addons .mono {
+	color: var(--clay-light);
+}
+.plan--featured:hover .plan__price,
+.plan--featured .link-arrow:hover {
+	color: var(--clay-light);
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+	.plan__list {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 4px;
+	}
+	.plan__media {
+		height: clamp(100px, 14svh, 150px);
+	}
+}
+@media (max-width: 1023px) {
+	.plans {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 20px;
+	}
+	.plan__media {
+		height: auto;
+		aspect-ratio: 21 / 9;
+	}
+}
+@media (max-width: 639px) {
+	.plan {
+		padding: 6px;
+	}
+	.plan__body {
+		padding: 16px 10px 8px;
+	}
+	.plan__media {
+		aspect-ratio: 5 / 2;
+	}
+	.plan__price {
+		margin: 8px 0 14px;
+	}
+	.plan__list {
+		gap: 4px 12px;
+		font-size: 0.8125rem;
+	}
+}
